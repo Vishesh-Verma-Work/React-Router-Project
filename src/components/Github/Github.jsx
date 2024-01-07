@@ -12,9 +12,13 @@ function Github() {
 
   return (
     <div className='text-center m-4 bg-gray-500 text-white p-4 text-3xl'>
-      Github Followers : {data.followers}
+      <h2>Github Followers : {data.followers}</h2>
       <img src={data.avatar_url} alt="" width={300}
        />
+       <h3 className='text-lg my-4 py-3 bg-gray-800'>{data.bio}</h3>
+       
+       <h1 className='text-md my-3'>Github Repo : {data.public_repos}</h1>
+
        <Link
        to="/github">
         <button className='flex bg-gray-800 text-white py-2 px-6 rounded-lg text-lg my-1'>
